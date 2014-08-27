@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snoop Bloggy Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1><a href="#">Snoop Bloggy Blog</a></h1>
+<h3>The Inner Workings Of Some Guy</h3>
+<span class="new"><a href="#entries/new">click here to add new entry<a></span>
+<div id="new-entry-form">
+  
+</div>
+<div id="entries-container">
+  <hr>
+</div>
+<%= yield %>
+
+</body>
+</html>
