@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require underscore
 //= require backbone
 //= require handlebars
@@ -33,3 +34,5 @@ $(document).ready(function(){
   App.router = new App.Router();
   Backbone.history.start();
 });
+
+$(function(){ $(document).foundation(); });

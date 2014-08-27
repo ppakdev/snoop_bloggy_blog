@@ -8,7 +8,7 @@ App.EntryListView = Backbone.View.extend({
 
   addOne: function(entry) {
     var entryView = new App.EntryView({model: entry})
-    entryView.$el.insertAfter(this.$('hr'));
+    entryView.$el.insertAfter(this.$('hr#first-hr'));
   },
 
   addAll: function() {

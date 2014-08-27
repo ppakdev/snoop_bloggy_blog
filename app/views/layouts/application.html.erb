@@ -7,14 +7,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1><a href="#">Snoop Bloggy Blog</a></h1>
-<h3>The Inner Workings Of Some Guy</h3>
-<span class="new"><a href="#entries/new">click here to add new entry<a></span>
+  <div class="fixed">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h2><a href="#">Snoop Bloggy Blog</a></h2>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="active"><a href="">Main</a></li>
+        <li class="has-dropdown">
+          <a href="#">Dropdown Menu</a>
+            <ul class="dropdown">
+              <li><a href="" >About</a></li>
+              <li class="active">
+                <span class="new">
+                  <a href="#entries/new" data-reveal-id="myModal">New Entry</a>
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
 <div id="new-entry-form">
-  
+
 </div>
 <div id="entries-container">
-  <hr>
+  <hr id="first-hr">
 </div>
 <%= yield %>
 

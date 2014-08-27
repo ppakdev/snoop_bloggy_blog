@@ -1,6 +1,6 @@
 App.EntryCollection = Backbone.Collection.extend({
   model: App.EntryModel,
-  url: '/grumbles',
+  url: '/entries',
   initialize: function() {
     console.log('blog pound');
   },

@@ -13,7 +13,7 @@ App.EntryFormView = Backbone.View.extend({
 
   events: {
     'click button.new-post': 'newEntry',
-    'click span.cancel': 'cancel'
+    'click button.cancel': 'cancel'
   },
 
   newEntry: function(){
@@ -25,6 +25,7 @@ App.EntryFormView = Backbone.View.extend({
     };
     this.collection.create(data, {success: function() {
       $('input').val('');
+      $('textarea').val('');
       $('#new-entry-form').hide();
       App.router.navigate('');
     }});

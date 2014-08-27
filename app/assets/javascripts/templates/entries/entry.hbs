@@ -1,6 +1,19 @@
-<div id="entry-{{id}}">
-  <h2>{{title}}</h2>
-  <p>{{content}}</p>
-  <p>Written By: {{author}}<img src="{{avatar}}"></p>
-  <span class="destroy">delete this</span>
+  <div class="row">
+    <div class="large-9 columns" role="content">
+      <div id="entry-{{id}}">
+      <article>
+        <h3><a href="#">{{title}}</a></h3>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>{{content}}</p>
+          </div>
+          <div class="large-6 columns">
+            <img src="{{avatar}}"/>
+          </div>
+        </div>
+        <h6>Written by <a href="#">{{author}}</a> on {{created_at}}.</h6>
+      </article>
+      <hr/>
+    </div>
+  </div>
 </div>
